@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: #f2f2f2;
+  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+}
+::selection{
+  background: #fff;
+  color: #fff;
+}
+
+
+.btn{
+  font-family: sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  background: #1E90FF;
+  width: 160px;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+  }
+  
+  .btn:hover, .btn:focus, .btn:active{
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+  }
+
+
+
+
+
+.h2{
+  text-align: center;
+  font-size: 60px;
+  background-color: #fff;
+  color: rgb(121, 59, 192);
+}
+
+.block {
+    display: block;
+    height: 110px;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #2300e9;
+    padding: 15px;
+    background: white;
+    font-weight: 50;
+    font-size:50px;
+    color:grey;
+  }
+
+  .gif{
+    width:100%;
+    height:auto;
+  }
+
+  /*.wrapper{
+    background: white;
+    max-width: 480px;
+    margin: auto;
+    box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }*/
+  
+
+.wrapper{
+    height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+    height: 150px;
+  font-size: 80px;
+  font-weight: 699;
+  text-align: center;
+  line-height: 150px;
+  color: #fff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.wrapper form{
+  padding: 20px 30px 50px 30px;
+}
+.wrapper form .field{
+  height: 120px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.wrapper form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 50px;
+  padding-left: 50px;
+  border: 5px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.wrapper form .field input:focus,
+form .field input:valid{
+  border-color: #2a22a1;
+}
+.wrapper form .field label{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 50px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+form .field input:focus ~ label,
+form .field input:valid ~ label{
+  top: 0%;
+  font-size: 15px;
+  color: #4158d0;
+  background: #fff;
+  transform: translateY(-50%);
+}
+form .content{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    font-size: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+form .content .checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .content input{
+  width: 30px;
+  height: 30px;
+  background: red;
+}
+form .content label{
+  color: #262626;
+  user-select: none;
+  padding-left: 5px;
+}
+form .content .pass-link{
+  color: "";
+}
+form .field input[type="submit"]{
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transition: all 0.3s ease;
+}
+form .field input[type="submit"]:active{
+  transform: scale(0.95);
+}
+form .signup-link{
+  color: #262626;
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+form .pass-link a,
+form .signup-link a{
+  color: #4158d0;
+  text-decoration: none;
+}
+form .pass-link a:hover,
+form .signup-link a:hover{
+  text-decoration: underline;
+}
